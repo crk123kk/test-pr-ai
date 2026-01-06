@@ -4,6 +4,8 @@ import { Octokit } from "@octokit/rest";
 // 1. 读取 diff（限制长度）
 const diff = fs.readFileSync("diff.txt", "utf8").slice(0, 8000);
 
+console.log("AI REVIEW SCRIPT VERSION:", new Date().toISOString());
+
 // 2. 构造 Prompt（极简）
 const prompt = `
 你是一个资深前端工程师，请 Review 以下 PR 的代码变更。
