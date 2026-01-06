@@ -1,5 +1,4 @@
 import fs from "fs";
-import fetch from "node-fetch";
 import { Octokit } from "@octokit/rest";
 
 // 1. 读取 diff（限制长度）
